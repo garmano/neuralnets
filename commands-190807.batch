@@ -1,0 +1,196 @@
+@dataset 'arrhythmia'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(60,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(60,40,20,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(60,40,20,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+@dataset 'autos'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(60,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(40,20,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(40,20,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+@dataset 'breast-cancer'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(40,20,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,40,20,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+@dataset 'chess'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.02, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(40,20,10,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.02, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(40,20,10,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.02, num_epochs=100)
+
+@dataset 'coil2000'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,40,20,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,40,20,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+@dataset 'dota2'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,40,20,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,40,20,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+@dataset 'iris' --skip
+
+  --repeat(10)
+  --do(mode='kfold', shape=(10,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(10,6,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(10,6,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+@dataset 'kr-vs-k'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(40,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(30,15,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(30,15,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+@dataset 'mushroom'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(10,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(10,6,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(10,6,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.02, num_epochs=100)
+
+@dataset 'optdigits'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(60,30,15,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(60,30,15,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+@dataset 'sonar'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,40,20,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,40,20,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+@dataset 'SPECT-full' --skip
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,40,20,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(80,40,20,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+@dataset 'vowel'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(40,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(30,20,10,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(30,20,10,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+@dataset 'WBC'
+
+  --repeat(10)
+  --do(mode='kfold', shape=(60,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(40,20,10,1), strategy='backprop')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
+  --repeat(10)
+  --do(mode='kfold', shape=(40,20,10,1), strategy='progressive')
+  --netargs(learning_rate=0.01, momentum=0.05, num_epochs=100)
+
